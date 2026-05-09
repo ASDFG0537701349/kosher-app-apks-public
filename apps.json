@@ -35,19 +35,12 @@
     "packageName": "com.egged.egg",
     "versionCode": 400001049,
     "apkUrl": "https://www.googleapis.com/drive/v3/files/1xzA5LM4zeCTQ1cdOmep_Qz709c03byjG?alt=media&key=AIzaSyDduW1Zbi2MIu8aMUMF6op72pJ1f0sPBi0",
-    "iconUrl": "https://raw.githubusercontent.com/ASDFG0537701349/kosher-app-apks-public/main/icons/com.egged.egg.png",
+    "iconUrl": "https://raw.githubusercontent.com/ASDFG0537701349/kosher-app-apks-public/refs/heads/main/icons/com.egged.egg.png",
     "description": "🚌 <b>Egg - אוטובוס קרוב ותחבורה ציבורית בזמן אמת!</b>\r\nמחפשים אוטובוס קרוב? רוצים תכנון מסלול נסיעה מהיר? Egg היא האפליקציה לנסיעות בתחבורה ציבורית בישראל - חכמה, נוחה וללא פרסומות!\r\n\r\n🗺️ <b>תכנון מסלול נסיעה וניווט בזמן אמת</b>\r\nמצאו אוטובוס קרוב ואת הדרך המהירה ביותר באוטובוס וברכבת עם עדכונים בזמן אמת וזמני הגעה מדויקים. תחבורה ציבורית זמנים ישראל - תמיד מעודכנים!\r\n\r\n💳 <b>תשלום באוטובוס בנייד - דיגיטלי, קל ונוח</b>\r\nתשלום באוטובוס ותשלום ברכבת ישירות מהנייד - בלי רב-קו! תשלום תחבורה ציבורית מהיר ומאובטח, חיסכון בזמן ובמאמץ - ללא התחייבות ובלי לשלם מראש. פשוט סורקים את קוד ה-QR ומקבלים כרטיס דיגיטלי זמין בנייד.\r\n\r\n🚫 <b>ללא פרסומות - תמיד!</b>\r\nחוויית שימוש שקטה, נעימה וממוקדת בכם ובנסיעה. נסיעות בתחבורה ציבורית ללא הסחות דעת - רק אתם והדרך.\r\n\r\n🎫 <b>הנחות מותאמות לזכאים</b>\r\nהנחות לתלמידים, חיילים, אזרחים ותיקים ועוד - לפי פרופיל אישי.\r\n\r\n💳 <b>הטענת רב-קו</b>\r\nהטענת רב-קו בתהליך קצר ופשוט - סריקה והטענת ערך צבור/מנוי.\r\n*נדרשת תמיכת המכשיר ב-NFC.\r\n\r\n🎟️ <b>הזמנת כרטיסים לנסיעות ארוכות באגד (כולל אילת)</b>\r\nבחרו תאריך, שמרו את הכרטיס באפליקציה והגיעו מוכנים.\r\n\r\n📁 <b>כרטיסים שמורים ונגישים עד לנסיעה</b>\r\nכל הכרטיסים שלכם זמינים בכל עת באפליקציה - מוכנים ליום הנסיעה.\r\n\r\n🧏‍♂️ <b>שירות ותמיכה מלאה</b>\r\nצרו קשר עם שירות הלקוחות, ותיהנו מתמיכה מקצועית ומהירה.\r\n\r\nהורידו עכשיו את Egg - אוטובוס קרוב, תכנון נסיעה ותשלום תחבורה ציבורית בזמן אמת. הכל ללא פרסומות!",
-    "category": "כללי",
+    "category": "תחבורה",
     "size": "30.6 MB",
     "checksum": "702441edf7219c563895c50ff000aa95",
-    "checksumType": "MD5",
-    "screenshots": [
-      "https://play-lh.googleusercontent.com/63WiX8gc3ImRIEmQ5b_9AmqLI2eudAwL-XbZ2kPpLiqD6wgEMhkvbVHC0RFlYW9uFOWpzuhYHiceUY-P0dUT200",
-      "https://play-lh.googleusercontent.com/UaXp0LKUgM-AVmDK6GZ2hmxpqZuOEp_aL4qj5X5moqPsVYVeR7dzXXdOdjrAcn7Oud0QG8BHWs25MbgcW8bV",
-      "https://play-lh.googleusercontent.com/UI5s0EVeruV2IKiAPQ6stahw9CExdN-v0VpABOKPMi0ZnPa9s7t7AitnTurfRmZ_IFUG3kTFEwcCdaFSDj5GKw",
-      "https://play-lh.googleusercontent.com/abgBTdq3ReBvNx_m9_2QVwq25KuAHMBbEvSelMlE9IOcHcu54Qs4lnBh7gpc8xt4Ap26RfKJv1mlzqR6cKqcMA",
-      "https://play-lh.googleusercontent.com/sw71MD1G_8Jt7uzcefIQuRHf8T8ZTbvQMoVi0-4sz-uf4ePg8aC81tXBHcxPWmbBAzaUt1LgcSAfXjRagO0pOA"
-    ]
+    "checksumType": "MD5"
   },
   {
     "name": "Metrolist",
@@ -71,13 +64,6 @@
     "category": "אפליקציות גוגל",
     "size": "38.2 MB",
     "checksum": "0f15fcfc8a4d5213784ef057036c1927",
-    "checksumType": "MD5",
-    "screenshots": [
-      "https://play-lh.googleusercontent.com/-Eo8pCXJ9ofkZsS605-4uXBXbOjCLMOI2THcPhTlmmJ5AUtOlV_ejWpwmxdnobwg-xg",
-      "https://play-lh.googleusercontent.com/T_6aiD-fKmn91V8Hqm2WNGlxQfonKKfUm9u0pQBzsgg29QFnszI0tCcKLLwl3TDQtG0",
-      "https://play-lh.googleusercontent.com/yTSD6lM63edhAl0bhQdKiE9hC7OIHgzBxMX2PSnwlW248e7GHvsjgZjIuuhicvMsnAjP",
-      "https://play-lh.googleusercontent.com/aIRH5E41KH1pNSsWfHgU7i02_UHDFYSG621aS9Rc-OBjLStfeTEyRJIzOQp6Ncojbz8",
-      "https://play-lh.googleusercontent.com/rJrkcEsdQa7_AozmzGpy9CPTy-GKKFENfBRdUQwXLdI0tSbYSMsng0C19CdzYmQM-Q"
-    ]
+    "checksumType": "MD5"
   }
 ]
