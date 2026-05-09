@@ -6,11 +6,38 @@
     "versionName": "6.12",
     "apkUrl": "https://www.googleapis.com/drive/v3/files/1DMRhjhytV7miUOJqvTPbbS4rgkOitsZS?alt=media&key=AIzaSyDduW1Zbi2MIu8aMUMF6op72pJ1f0sPBi0",
     "iconUrl": "https://raw.githubusercontent.com/ASDFG0537701349/kosher-app-apks-public/refs/heads/main/icons/com.bnhp.payments.paymentsapp.png",
-    "description": "bit",
+    "description": "bit אפליקציית התשלומים המובילה בישראל, המאפשרת להעביר ולקבל כסף בקלות ובצורה בטוחה.\r\n\r\nניהול יתרה כספית- מקבלים כסף מחברים? הכסף מצטבר באפליקציה ואתם יכולים להחליט אם לשמור אותו או לעשות בו שימוש להעברות\r\nתשלום באתרי קניות ובאפליקציות – עושים שופינג אונליין ומשלמים ב-bit ללא צורך להקליד פרטי כרטיס אשראי.\r\nהזמנת מט\"ח מהטרמינל – מזמינים מראש את המט״ח ב-bit ואוספים בשדה תעופה.\r\nאיסוף כסף מקבוצות – מתארגנים לעל האש? קונים מתנה ביחד? כל מה שצריך זה לפתוח קבוצה ולהזמין חברים להצטרף. אנחנו כבר נזכיר להם להעביר את הסכום שצריך.\r\nשליחת בקשה לתשלום – מגיע לכם כסף ומישהו שכח מזה? תרגישו חופשי להזכיר לו על ידי שליחת בקשה לתשלום. \r\nקבלת החזרים מחברות ביטוח ומקרנות פנסיה – כבר לא צריך להתעסק עם ניירת מיותרת, מקבלים את ההחזר ב-bit ישירות לחשבון.\r\nתשלום ארנונה – מקבלים את בקשת התשלום ישירות לאפליקציה ומשלמים בלחיצת כפתור.  \r\nכרטיס אשראי Carrefour Club – מזמינים כרטיס, מקבלים מגוון הטבות ומתחילים לצבור +Carrefour coins למימוש ברשתות המועדון.",
     "category": "כללי",
     "size": "150.2 MB",
     "checksum": "8a9e80bf99a29f25a4daa8de1d049ce8",
-    "checksumType": "MD5"
+    "checksumType": "MD5",
+    "screenshots": [
+      "https://play-lh.googleusercontent.com/R0bGaLZX1HGw5ODiUw_ZkCk6k4guwdrRNdKAhpik7NUBZznrWn1JmkuYkWSuIOhl7g",
+      "https://play-lh.googleusercontent.com/IxTV-tDnW9ePjLFC44uwzi6u3GpHIjOSzgMt-TaGrRTyriztDtPYk5UPOjXinEA1zA",
+      "https://play-lh.googleusercontent.com/CcNFUfI7KWl2fjHlxr_mRC4wEA52cheRhXCd7KsLE6Xx4_K3gHsqcCTxW2Fj_R2XkQ",
+      "https://play-lh.googleusercontent.com/lmWdk5ve-KgjMUeqBNP3O-GwHPrhDGKidBB6c0J3Z0QzpeX71c_F8stLkiZ1BXcOdXc",
+      "https://play-lh.googleusercontent.com/rDrFSmvmS-DQlWszvRUB07XAf0zmv8RxirVR3kt5JvGePSM4aaDAZpA9osOlGYDWkbE"
+    ]
+  },
+  {
+    "name": "Chat",
+    "packageName": "com.google.android.apps.dynamite",
+    "versionCode": 4690532,
+    "versionName": "2023.08.06.554307641.Release",
+    "apkUrl": "https://www.googleapis.com/drive/v3/files/1HSpW64010f-nsefqCLIWXR4gZoPF0dY2?alt=media&key=AIzaSyDduW1Zbi2MIu8aMUMF6op72pJ1f0sPBi0",
+    "iconUrl": "https://raw.githubusercontent.com/ASDFG0537701349/kosher-app-apks-public/refs/heads/main/icons/com.google.android.apps.dynamite.png",
+    "description": "‫Google Chat: הדרך הכי טובה לשתף פעולה ולבצע משימות לצוותים שעובדים ב-Workspace.‏\r\n\r\n  Gemini: הדור הבא של עבודה משותפת מבוססת AI‏\r\n  • סיכומי שיחות: מתעדכנים בכל מה שחשוב\r\n  • תרגום הודעות אוטומטי: ביותר מ-120 שפות\r\n  • חיפוש מבוסס AI: מוצאים את מה שצריך מהר ובקלות\r\n  • סיכום פעולות לביצוע: כדי שכל הצוות יהיה באותו ראש\r\n\r\n   כל מה שצריך כדי לתקשר ולעבוד בצוות\r\n  • צ'אטים: אישיים, קבוצתיים, או אפילו עם כל הצוות\r\n  • עדכוני סטטוס בהתאמה אישית: כדי שכל הצוות אם אתם פנויים או לא\r\n  • הודעות קוליות והודעות וידאו: כשיש לכם עדכון מורכב להעביר\r\n  • שיחות מהירות: לתקשורת זריזה בזמן אמת\r\n\r\n   כל היכולות של Workspace משתלבות כדי לשדרג את עבודת הצוות שלכם\r\n  • שילוב עם אפליקציות Workspace: כמו Gmail,‏ Calendar,‏ Drive,‏ Tasks ו-Meet‏\r\n  • צ'יפים חכמים עם קישורים לקבצים, אנשים ומרחבים: כדי לייעל את העבודה המשותפת\r\n  • אפליקציית Google Drive ל-Chat: כדי להתעדכן בקלות בבקשות ותגובות, ולאשר מה שצריך\r\n  • אפליקציות פופולריות ושימושיות ל-Chat: כמו PagerDuty,‏ Jira,‏ GitHub,‏ Workday ועוד\r\n  • ממשקי API של Chat: כדי לפתח אפליקציות בשפות תכנות מקצועיות, עם תכנות מינימלי ואפילו בלי צורך בתכנות בכלל\r\n\r\n   ממשק מאובטח\r\n  • הגנה מובנית של הארכיטקטורה מבוססת הענן של Google, ומודל אבטחה של אפס אמון\r\n  • לא צריך להתקין אף אפליקציה על המחשב או לשמור נתונים במכשירים של המשתמשים\r\n  • כל הנתונים נשארים בטוחים בזכות תהליך מבוסס-AI (DLP) וזיהוי של פישינג ותוכנות זדוניות\r\n  • מעבר מפלטפורמות מדור קודם ברמת אבטחה נמוכה\r\n\r\n   ‫Chat כלול ב-Google Workspace ללקוחות פרטיים, ללקוחות בתחום החינוך וללקוחות עסקיים.\r\nכדי להשתמש בחלק מתכונות הפרימיום צריך מינוי בתשלום. למידע נוסף או התחלת תקופת ניסיון ל-14 יום: https://workspace.google.com/pricing.html.\r\n\r\n  עקבו אחרינו ברשתות החברתיות:\r\n  X‏: https://x.com/googleworkspace\r\n  לינקדאין: https://www.linkedin.com/showcase/googleworkspace\r\n  פייסבוק: https://www.facebook.com/googleworkspace\r\n  אינסטגרם: https://www.instagram.com/googleworkspace\r\n  טיקטוק: https://www.tiktok.com/@googleworkspace\r\n  YouTube: ‏https://www.youtube.com/@googleworkspace",
+    "category": "אפליקציות גוגל",
+    "size": "35.2 MB",
+    "checksum": "9ff20b400c53d1e9273f98808e566c5a",
+    "checksumType": "MD5",
+    "screenshots": [
+      "https://play-lh.googleusercontent.com/HcjNzNum9XnGjuplOVxONBaElhRSBJmRNJ47FI4NEOV3_Du0Ht6-cd0CHT9pfCaU6dHD",
+      "https://play-lh.googleusercontent.com/hU8eAAWiqCHT1OG10nW2Ix14xLQSOxduGsHry4oSDDNH7apB7Jh7fZNTLuYhkGC21Bs",
+      "https://play-lh.googleusercontent.com/_dQf2SJH93cEvCsC8pG0s6mgnSQt7jXsz1hzc7JKVuLhdP3440Nc6Fc3qmt0JImEJto",
+      "https://play-lh.googleusercontent.com/xp_VYg8DTqPwoXPY-yibIdVn5HdswYw816tx_JUxKO46yKC2Tp1PS9yGL0ZaoLeKM_lm",
+      "https://play-lh.googleusercontent.com/c7UNtXzmsdN3nyD0CBBKBgb8VwPXyGoWM9p1v8DEkIxIttj5cdanRWJoGUGaqymj-OZn"
+    ]
   },
   {
     "name": "egg",
@@ -18,11 +45,51 @@
     "versionCode": 400001049,
     "versionName": "10.1.42",
     "apkUrl": "https://www.googleapis.com/drive/v3/files/1xzA5LM4zeCTQ1cdOmep_Qz709c03byjG?alt=media&key=AIzaSyDduW1Zbi2MIu8aMUMF6op72pJ1f0sPBi0",
-    "iconUrl": "https://raw.githubusercontent.com/ASDFG0537701349/kosher-app-apks-public/refs/heads/main/icons/com.egged.egg.png",
-    "description": "egg",
+    "iconUrl": "https://raw.githubusercontent.com/ASDFG0537701349/kosher-app-apks-public/main/icons/com.egged.egg.png",
+    "description": "🚌 <b>Egg - אוטובוס קרוב ותחבורה ציבורית בזמן אמת!</b>\r\nמחפשים אוטובוס קרוב? רוצים תכנון מסלול נסיעה מהיר? Egg היא האפליקציה לנסיעות בתחבורה ציבורית בישראל - חכמה, נוחה וללא פרסומות!\r\n\r\n🗺️ <b>תכנון מסלול נסיעה וניווט בזמן אמת</b>\r\nמצאו אוטובוס קרוב ואת הדרך המהירה ביותר באוטובוס וברכבת עם עדכונים בזמן אמת וזמני הגעה מדויקים. תחבורה ציבורית זמנים ישראל - תמיד מעודכנים!\r\n\r\n💳 <b>תשלום באוטובוס בנייד - דיגיטלי, קל ונוח</b>\r\nתשלום באוטובוס ותשלום ברכבת ישירות מהנייד - בלי רב-קו! תשלום תחבורה ציבורית מהיר ומאובטח, חיסכון בזמן ובמאמץ - ללא התחייבות ובלי לשלם מראש. פשוט סורקים את קוד ה-QR ומקבלים כרטיס דיגיטלי זמין בנייד.\r\n\r\n🚫 <b>ללא פרסומות - תמיד!</b>\r\nחוויית שימוש שקטה, נעימה וממוקדת בכם ובנסיעה. נסיעות בתחבורה ציבורית ללא הסחות דעת - רק אתם והדרך.\r\n\r\n🎫 <b>הנחות מותאמות לזכאים</b>\r\nהנחות לתלמידים, חיילים, אזרחים ותיקים ועוד - לפי פרופיל אישי.\r\n\r\n💳 <b>הטענת רב-קו</b>\r\nהטענת רב-קו בתהליך קצר ופשוט - סריקה והטענת ערך צבור/מנוי.\r\n*נדרשת תמיכת המכשיר ב-NFC.\r\n\r\n🎟️ <b>הזמנת כרטיסים לנסיעות ארוכות באגד (כולל אילת)</b>\r\nבחרו תאריך, שמרו את הכרטיס באפליקציה והגיעו מוכנים.\r\n\r\n📁 <b>כרטיסים שמורים ונגישים עד לנסיעה</b>\r\nכל הכרטיסים שלכם זמינים בכל עת באפליקציה - מוכנים ליום הנסיעה.\r\n\r\n🧏‍♂️ <b>שירות ותמיכה מלאה</b>\r\nצרו קשר עם שירות הלקוחות, ותיהנו מתמיכה מקצועית ומהירה.\r\n\r\nהורידו עכשיו את Egg - אוטובוס קרוב, תכנון נסיעה ותשלום תחבורה ציבורית בזמן אמת. הכל ללא פרסומות!",
     "category": "כללי",
     "size": "30.6 MB",
     "checksum": "702441edf7219c563895c50ff000aa95",
+    "checksumType": "MD5",
+    "screenshots": [
+      "https://play-lh.googleusercontent.com/63WiX8gc3ImRIEmQ5b_9AmqLI2eudAwL-XbZ2kPpLiqD6wgEMhkvbVHC0RFlYW9uFOWpzuhYHiceUY-P0dUT200",
+      "https://play-lh.googleusercontent.com/UaXp0LKUgM-AVmDK6GZ2hmxpqZuOEp_aL4qj5X5moqPsVYVeR7dzXXdOdjrAcn7Oud0QG8BHWs25MbgcW8bV",
+      "https://play-lh.googleusercontent.com/UI5s0EVeruV2IKiAPQ6stahw9CExdN-v0VpABOKPMi0ZnPa9s7t7AitnTurfRmZ_IFUG3kTFEwcCdaFSDj5GKw",
+      "https://play-lh.googleusercontent.com/abgBTdq3ReBvNx_m9_2QVwq25KuAHMBbEvSelMlE9IOcHcu54Qs4lnBh7gpc8xt4Ap26RfKJv1mlzqR6cKqcMA",
+      "https://play-lh.googleusercontent.com/sw71MD1G_8Jt7uzcefIQuRHf8T8ZTbvQMoVi0-4sz-uf4ePg8aC81tXBHcxPWmbBAzaUt1LgcSAfXjRagO0pOA"
+    ]
+  },
+  {
+    "name": "Metrolist",
+    "packageName": "com.metrolist.music",
+    "versionCode": 146,
+    "versionName": "13.4.2",
+    "apkUrl": "https://www.googleapis.com/drive/v3/files/1eR-AJ6vliggHpzF0RFm23Nn2CeLrvi3i?alt=media&key=AIzaSyDduW1Zbi2MIu8aMUMF6op72pJ1f0sPBi0",
+    "iconUrl": "https://raw.githubusercontent.com/ASDFG0537701349/kosher-app-apks-public/refs/heads/main/icons/com.metrolist.music.png",
+    "description": "Metrolist",
+    "category": "מדיה ובידור",
+    "size": "23.3 MB",
+    "checksum": "1a7aab6f463eb4320e16a2c0a875813d",
     "checksumType": "MD5"
+  },
+  {
+    "name": "Voice",
+    "packageName": "com.google.android.apps.googlevoice",
+    "versionCode": 3555881,
+    "versionName": "2023.11.27.585790042",
+    "apkUrl": "https://www.googleapis.com/drive/v3/files/1HSpW64010f-nsefqCLIWXR4gZoPF0dY2?alt=media&key=AIzaSyDduW1Zbi2MIu8aMUMF6op72pJ1f0sPBi0",
+    "iconUrl": "https://raw.githubusercontent.com/ASDFG0537701349/kosher-app-apks-public/refs/heads/main/icons/com.google.android.apps.googlevoice.png",
+    "description": "מתקינים את Google Voice ומקבלים מספר טלפון לשיחות, להודעות טקסט ולהודעות קוליות. האפליקציה פועלת בסמארטפונים ובמחשבים, ומסתנכרנת בין כל המכשירים – כך שאפשר להשתמש בה בבית, במשרד ובכל מקום.\r\n\r\nהערה: אפשר להשתמש ב-Google Voice רק עם חשבונות Google אישיים בארה\"ב או עם חשבונות Google Workspace בחלק מהמדינות. אפשר לשלוח הודעות טקסט רק בחלק מהמדינות.\r\n\r\n <b>השליטה בידיים שלכם</b>\r\n הספאם יסונן אוטומטית, ותוכלו לחסום מספרים לא רצויים. ובאמצעות הגדרות אישיות להעברת שיחות, הודעות טקסט והודעות קוליות יהיה לכם קל להיות עם יד על הדופק.\r\n\r\n <b>גיבוי וחיפוש</b>\r\n השיחות, הודעות הטקסט וההודעות הקוליות יישמרו ויגובו, ויהיה לכם קל לחפש אותן בהיסטוריה.\r\n\r\n <b>ניהול ההודעות בין מכשירים שונים</b>\r\n תוכלו לשלוח ולקבל הודעות SMS אישיות או קבוצתיות בכל המכשירים.\r\n\r\n <b>תמלול ההודעות הקוליות</b>\r\n Google Voice מתמללת את ההודעות הקוליות באיכות גבוהה, כך שתוכלו לקרוא אותן באפליקציה וגם לשלוח אותן לאימייל.\r\n\r\n <b>לחסוך על שיחות לחו\"ל</b>\r\n אפשר להתקשר לחו\"ל בתעריפים תחרותיים, בלי לשלם לספק הסלולר על דקות שיחה לחו\"ל.\r\n\r\n לא לשכוח:\r\n • נכון לכרגע אפשר להשתמש ב-Google Voice רק עם חשבונות Google אישיים בארה\"ב או עם חשבונות Google Workspace בחלק מהמדינות. למידע נוסף, יש לפנות לאדמין.\r\n • השיחות שמבוצעות באמצעות Google Voice במכשירי Android הן דרך מספר גישה של Google Voice. כל השיחות שמבוצעות דרך מספרי גישה הן על חשבון דקות השיחה בחבילה הסלולרית ועשויות להיות בתשלום נוסף (למשל, כשנוסעים לחו\"ל).",
+    "category": "כללי",
+    "size": "38.2 MB",
+    "checksum": "0f15fcfc8a4d5213784ef057036c1927",
+    "checksumType": "MD5",
+    "screenshots": [
+      "https://play-lh.googleusercontent.com/-Eo8pCXJ9ofkZsS605-4uXBXbOjCLMOI2THcPhTlmmJ5AUtOlV_ejWpwmxdnobwg-xg",
+      "https://play-lh.googleusercontent.com/T_6aiD-fKmn91V8Hqm2WNGlxQfonKKfUm9u0pQBzsgg29QFnszI0tCcKLLwl3TDQtG0",
+      "https://play-lh.googleusercontent.com/yTSD6lM63edhAl0bhQdKiE9hC7OIHgzBxMX2PSnwlW248e7GHvsjgZjIuuhicvMsnAjP",
+      "https://play-lh.googleusercontent.com/aIRH5E41KH1pNSsWfHgU7i02_UHDFYSG621aS9Rc-OBjLStfeTEyRJIzOQp6Ncojbz8",
+      "https://play-lh.googleusercontent.com/rJrkcEsdQa7_AozmzGpy9CPTy-GKKFENfBRdUQwXLdI0tSbYSMsng0C19CdzYmQM-Q"
+    ]
   }
 ]
