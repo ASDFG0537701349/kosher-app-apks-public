@@ -34,6 +34,12 @@ class MainFragment : Fragment() {
     private val binding get() = _binding!!
     private val viewModel: MainViewModel by viewModels()
 
+    private val categoryAdapter by lazy {
+        CategoryAdapter { category ->
+            viewModel.onCategorySelected(category)
+        }
+    }
+
     private val adapter by lazy {
         AppListAdapter(
             mode = AppCardMode.STORE,
@@ -60,7 +66,6 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupRecycler()
-        setupToolbarMenu()
         setupInteractions()
         observeViewModel()
     }
@@ -73,52 +78,32 @@ class MainFragment : Fragment() {
     private fun setupRecycler() {
         binding.recyclerApps.layoutManager = GridLayoutManager(requireContext(), spanCount())
         binding.recyclerApps.adapter = adapter
-    }
 
-    private fun setupToolbarMenu() {
-        requireActivity().addMenuProvider(object : MenuProvider {
-            override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
-                menuInflater.inflate(R.menu.main_menu, menu)
-                val searchItem = menu.findItem(R.id.menu_search)
-                val searchView = searchItem.actionView as SearchView
-                searchView.queryHint = getString(R.string.search_hint)
-                searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-                    override fun onQueryTextSubmit(query: String?): Boolean = true
-
-                    override fun onQueryTextChange(newText: String?): Boolean {
-                        viewModel.onSearchChanged(newText.orEmpty())
-                        return true
-                    }
-                })
-            }
-
-            override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
-                return when (menuItem.itemId) {
-                    R.id.menu_refresh -> {
-                        viewModel.sync()
-                        true
-                    }
-
-                    R.id.menu_management -> {
-                        findNavController().navigate(R.id.action_main_to_management)
-                        true
-                    }
-
-                    R.id.menu_settings -> {
-                        findNavController().navigate(R.id.settingsFragment)
-                        true
-                    }
-
-                    else -> false
-                }
-            }
-        }, viewLifecycleOwner, Lifecycle.State.RESUMED)
+        binding.recyclerCategories.layoutManager = GridLayoutManager(requireContext(), 2)
+        binding.recyclerCategories.adapter = categoryAdapter
     }
 
     private fun setupInteractions() {
         binding.swipeRefresh.setOnRefreshListener { viewModel.sync() }
+
         binding.buttonCheckUpdates.setOnClickListener { viewModel.sync() }
-        binding.buttonUpdateAll.setOnClickListener { viewModel.updateAll() }
+        
+        binding.editSearch.addTextChangedListener(object : android.text.TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                viewModel.onSearchChanged(s?.toString().orEmpty())
+            }
+            override fun afterTextChanged(s: android.text.Editable?) {}
+        })
+
+        binding.buttonSettings.setOnClickListener {
+            findNavController().navigate(R.id.settingsFragment)
+        }
+
+        binding.buttonBack.setOnClickListener {
+            viewModel.onCategorySelected(null)
+            binding.editSearch.text?.clear()
+        }
     }
 
     private fun observeViewModel() {
@@ -141,53 +126,40 @@ class MainFragment : Fragment() {
 
     private fun render(state: MainViewModel.MainUiState) = with(binding) {
         swipeRefresh.isRefreshing = state.isRefreshing
+        
+        val isSearching = state.query.isNotBlank()
+        val hasCategory = state.selectedCategory != null
+        val showAppList = hasCategory || isSearching
+        
         val showShimmer = state.isLoading && state.apps.isEmpty()
-        val showEmpty = !state.isLoading && state.apps.isEmpty()
+        val showEmpty = !state.isLoading && state.apps.isEmpty() && showAppList
+        
         shimmerLayout.isVisible = showShimmer
-        recyclerApps.isVisible = !showShimmer && !showEmpty
+        
+        // Toggle between Category Grid and App List
+        recyclerCategories.isVisible = !showAppList && !showShimmer
+        recyclerApps.isVisible = showAppList && !showShimmer && !showEmpty
+        
         layoutEmpty.isVisible = showEmpty
         textSyncMessage.isVisible = !state.syncMessage.isNullOrBlank()
         textSyncMessage.text = state.syncMessage
 
         buttonCheckUpdates.isEnabled = !state.isRefreshing
-        buttonUpdateAll.isVisible = state.updateCount > 0
+        buttonUpdateAll.isVisible = state.updateCount > 0 && showAppList
         buttonUpdateAll.text = getString(R.string.update_all, state.updateCount)
 
-        renderCategories(state.categories, state.selectedCategory)
-        adapter.submitList(state.apps)
-    }
-
-    private fun renderCategories(categories: List<String>, selected: String?) {
-        binding.chipGroupCategories.removeAllViews()
-
-        val allChip = buildCategoryChip(
-            title = getString(R.string.category_all),
-            isChecked = selected == null
-        ) {
-            viewModel.onCategorySelected(null)
-        }
-        binding.chipGroupCategories.addView(allChip)
-
-        categories.forEach { category ->
-            binding.chipGroupCategories.addView(
-                buildCategoryChip(category, category == selected) {
-                    viewModel.onCategorySelected(category)
-                }
-            )
-        }
-    }
-
-    private fun buildCategoryChip(title: String, isChecked: Boolean, onClick: () -> Unit): Chip {
-        return Chip(requireContext()).apply {
-            text = title
-            isCheckable = true
-            checkedIcon = null
-            this.isChecked = isChecked
-            setOnClickListener { onClick() }
+        // Search bar UI
+        buttonBack.isVisible = showAppList
+        imageSearchIcon.isVisible = !showAppList
+        if (!showAppList) {
+            categoryAdapter.submitList(CategoryDisplayData.mapFromNames(state.categories))
+        } else {
+            adapter.submitList(state.apps)
         }
     }
 
     private fun spanCount(): Int {
-        return if (resources.configuration.screenWidthDp >= 600) 3 else 2
+        return if (resources.configuration.screenWidthDp >= 600) 2 else 1
     }
 }
+

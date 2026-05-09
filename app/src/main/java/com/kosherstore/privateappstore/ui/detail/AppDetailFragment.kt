@@ -117,45 +117,21 @@ class AppDetailFragment : Fragment() {
         buttonPrimary.setOnClickListener { viewModel.onPrimaryAction(app) }
 
         val secondaryLabel = AppPresentationUtils.secondaryActionLabelRes(app, AppCardMode.STORE)
-        secondaryLabel?.let(buttonSecondary::setText)
-        buttonSecondary.setOnClickListener { viewModel.onSecondaryAction(app) }
-        applyActionButtonRow(secondaryLabel != null)
-
-        // Display screenshots
-        if (app.screenshots.isNotEmpty()) {
-            screenshotAdapter.submitList(app.screenshots)
-            textScreenshotsHint.isVisible = true
-            cardScreenshots.isVisible = true
-            textNoScreenshots.isVisible = false
-        } else {
-            screenshotAdapter.submitList(emptyList())
-            textScreenshotsHint.isVisible = false
-            cardScreenshots.isVisible = false
-            textNoScreenshots.isVisible = true
-        }
-    }
-
-    /** Full-width primary button when secondary is hidden (single clear call-to-action). */
-    private fun applyActionButtonRow(showSecondary: Boolean) = with(binding) {
-        val lpPrimary = buttonPrimary.layoutParams as LinearLayout.LayoutParams
-        val lpSecondary = buttonSecondary.layoutParams as LinearLayout.LayoutParams
-        if (showSecondary) {
-            lpPrimary.width = 0
-            lpPrimary.weight = 2f
-            lpSecondary.width = 0
-            lpSecondary.weight = 1f
-            val marginPx = (8 * resources.displayMetrics.density).toInt()
-            lpSecondary.marginStart = marginPx
+        if (secondaryLabel != null) {
+            buttonSecondary.setText(secondaryLabel)
             buttonSecondary.isVisible = true
+            buttonSecondary.setOnClickListener { viewModel.onSecondaryAction(app) }
         } else {
-            lpPrimary.width = ViewGroup.LayoutParams.MATCH_PARENT
-            lpPrimary.weight = 0f
-            lpSecondary.width = ViewGroup.LayoutParams.WRAP_CONTENT
-            lpSecondary.weight = 0f
-            lpSecondary.marginStart = 0
             buttonSecondary.isVisible = false
         }
-        buttonPrimary.layoutParams = lpPrimary
-        buttonSecondary.layoutParams = lpSecondary
+        // Display screenshots
+        if (app.screenshots.isNotEmpty()) {
+            binding.recyclerScreenshots.isVisible = true
+            screenshotAdapter.submitList(app.screenshots)
+        } else {
+            binding.recyclerScreenshots.isVisible = false
+        }
     }
+
 }
+
