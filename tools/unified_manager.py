@@ -448,23 +448,22 @@ class StoreManagerApp(tk.Tk):
                 branch = branch_res.stdout.strip() or "main"
                 self.log(f"📍 אתה נמצא בענף: {branch}")
 
-                # 1. Add changes
-                self.log("  • אוסף את כל השינויים (git add .)...")
-                subprocess.run(["git", "add", "."], cwd=ROOT_DIR, check=True)
+                # 1. Add changes (Only icons and JSON as requested)
+                self.log("  • אוסף קבצי חנות (apps.json ו-icons)...")
+                subprocess.run(["git", "add", "apps.json", "icons/"], cwd=ROOT_DIR, check=True)
                 
                 # 2. Commit
                 self.log("  • מבצע Commit לשינויים...")
-                msg = f"Update apps, icons and UI - {time.strftime('%Y-%m-%d %H:%M')}"
-                # We don't check=True here because if there are no changes, commit fails
+                msg = f"Update store data - {time.strftime('%Y-%m-%d %H:%M')}"
                 subprocess.run(["git", "commit", "-m", msg], cwd=ROOT_DIR, capture_output=True)
                 
                 # 3. Push
-                self.log(f"  • מבצע Push לענף {branch} בשרת...")
+                self.log(f"  • מבצע Push לענף {branch}...")
                 result = subprocess.run(["git", "push", "-u", "origin", branch], cwd=ROOT_DIR, capture_output=True, text=True)
                 
                 if result.returncode == 0:
                     self.log(f"✅ הפרסום לענף '{branch}' הסתיים בהצלחה!")
-                    messagebox.showinfo("הצלחה", f"השינויים עלו בהצלחה ל-GitHub!\nענף: {branch}\n\nשים לב: אם אתה לא רואה את השינויים בדף הראשי, וודא שאתה מסתכל על ענף '{branch}' בגיטהב.")
+                    messagebox.showinfo("הצלחה", f"הנתונים עלו בהצלחה ל-GitHub!\n\nהועלו רק: apps.json ותיקיית האייקונים.")
                 else:
                     self.log(f"❌ שגיאה ב-Push:\n{result.stderr}")
                     messagebox.showerror("שגיאה", f"ה-Push נכשל:\n{result.stderr}")
