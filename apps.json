@@ -1,5 +1,17 @@
 [
   {
+    "name": "Aurora Updater",
+    "packageName": "com.aurora.store",
+    "versionCode": 74,
+    "apkUrl": "https://drive.google.com/uc?export=download&id=1Ur6BYxLwXrb46vkAZ86jDBIurwFOLr0R",
+    "iconUrl": "https://raw.githubusercontent.com/ASDFG0537701349/kosher-app-apks-public/refs/heads/main/icons/com.aurora.store.png",
+    "description": "חנות עידכונים מומלצת למכשירי האנדרואיד!",
+    "category": "כלים",
+    "size": "8.8 MB",
+    "checksum": "5c65602886ff89625aaa9f6ad37d1cc4",
+    "checksumType": "MD5"
+  },
+  {
     "name": "bit",
     "packageName": "com.bnhp.payments.paymentsapp",
     "versionCode": 485,
@@ -183,7 +195,7 @@
     ]
   },
   {
-    "name": "WhatsApp",
+    "name": "WhatsApp מסונן",
     "packageName": "com.whatsapp",
     "versionCode": 261707300,
     "apkUrl": "https://www.googleapis.com/drive/v3/files/1LNH0ehoi3JRQSZx5OrMo198_pfGCkhrY?alt=media&key=AIzaSyDduW1Zbi2MIu8aMUMF6op72pJ1f0sPBi0",
